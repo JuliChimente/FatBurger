@@ -309,10 +309,6 @@ color: #fff;
 		order: 5;
 	}
 
-	.Opina-Responsive img {
-		min-width: 170px;
-		transform: rotate(30deg);
-	}
 
 	.Form-Responsive {
 		align-items: center;
@@ -374,12 +370,6 @@ color: #fff;
 	}
 
 	/*Form Movimiento*/
-
-	.Opina-Responsive img:hover {
-	transform: rotate(10deg);
-	transition: 0.4s;
-	}
-
 
 	.Form_Input-Responsive input[type="text"]:focus {
 		background: linear-gradient(to bottom, #8A8A8A, #3E3E3E);
