@@ -1,0 +1,13 @@
+- Poder armar tu propia burger con los ingredientes disponibles, tipo mc
+- Segun tus gustos que te recomiende algunas de nuestras burgers
+- Que dependiendo la cantidad de ventas de las hamburguesas te cree una seleccion de las mas vendidas y las recomiende
+- Que invitando amigos tengas descuentos, con codigo de referido o algo asi
+- Poder hacer acertijos donde se consiga un cupón de descuento que lo puedan usar X cantidad de personas
+- Tener la posibilidad de formar parte de Fatburger con un precio fijo por mes, y que por formar parte tengas beneficios
+- Las Burgers armadas si se venden mucho poder agregarlas al menu
+- Que tengas un apartado donde puedan dejarnos una opinion de su pedido particular, o de nosotros en si
+- Un apartado donde puedan subir una foto de su burger y una opinion para que la vea otra gente
+- Yyyy pensar algo con puntos, cuestion que capaz al llegar a X cant de puntos puedas canjear por un cupon de descuento o algo similar, esto se tendria que REVISAR, y anotar todos los pedidos a papel, cuestion que si se hackea la pag, se pueda comprobar todo
+- Por ultimo un chat no se si vale la pena, debido a que se pueden comunicar por IG
+- Para hacer el pedido por la web, Deben registrarse con numero de dni, nombre, apellido, y demas datos, de este modo, sabemos que no van a hacer pedidos en joda
+- Sorteo semanales para las personas que compren el VIP!

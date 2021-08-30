@@ -1,0 +1,443 @@
+<link rel="stylesheet" type="text/css" href="estilo.css">
+De esta forma lo que hacemos es que nuestros estilos no esten directamente en el index ocupando asi espacio, y siendo mas facir de modificar
+
+selector{ El o los elementos que queremos cambiar
+	propiedad: valor; Propiedad es que queremos cambiarle, el valor justamente por cual queremos cambiarlo
+}
+
+-Tipos de selectores:
+
+* : Selector universal
+
+Nombre del elemento: Solo al tipo de elemento seleccionado
+
+Por clase: A cualquier tipo de elemento le damos una clase por ejemplo y para cambiarlo ponemos
+<h1 class="Nombre de la clase">Titulo</h1
+.Nombre de la clase{
+	propiedad: valor;
+}
+
+Por id: En el elemento ponemos id="Nombre del id", luego lo usamos como 
+#Nombre del id{
+	propiedad: valor;
+}
+Recordar usar un id para cada elemento, por mas que sea del mismo tipo
+
+Por atributo: En el elemento ponemos NombreAtributo="Lo que querramos", y para usarlo
+[NombreAtributo="Lo que querramos"]{
+	propiedad: valor;
+}
+
+Por decendencia: Basicamente si por ejemplo tenemos un 
+<h1> con algo adentro como un <b></b> </h1> dejaria de ser un h1 normal y tendriamos que usarlo asi
+h1 b{
+	propiedad: valor;
+}
+Tambien se puede aplicar con clases
+<h1 class="Qsy"> <p>Algo</p> </h1>
+
+.Qsy p{
+	propiedad: valor;
+}
+
+Cosa a tener en cuenta, es que si por ejemplo, agregamos algo mas especifico dentro de un elemento que ya teniamos, podemos a esa cosa mas especifica modificarla
+
+<h1 class="Qsy"> <p>Algo span otro algo</p> </h1>
+
+.Qsy p{
+	propiedad: valor;
+}
+
+.Qsy p span{
+	propiedad: valor; Aca le podemos dar un valor a el span especificamente
+}
+
+Pseudo-clases: Baciamente que por ejemplo al pasarle por encima, se genere el cambiarlo
+
+.Qsy p:hover{ Al pasarle por encima se cambia
+	propiedad: valor;
+}
+
+Estilo en linea:
+
+<h1 style="color:red">Algun titulo o algo </h1> Este seria un estilo en linea
+
+!important: Este basicamente es el mas picante en cuanto a jerarquia
+
+.Qsy p{
+	propiedad: valor !important 
+} Se usa de esta forma, no es tan recomendado usarlo
+
+Especificidad:
+-Como es en cascada siempre le da mas importancia al ultimo
+
+Importancia de menos importante a mas: La importancia es cual es la propiedad que se apropia si cambiamos un mismo elemento
+-Elementos Pseudo-elemento
+-Clases pseudo-clases atributos
+-Identificadores
+-Estilos en linea
+-!important
+
+La "cascada" solo funciona cuando son de la misma clase, sino aplican justamente las clases
+
+Metodologia BEM:
+Consiste en evitar seleccionar muchas clases y generar conflictos
+Para esto usamos las clases de esta forma:
+
+<div class="contact-form"> Puede ir cualquier nombre
+	<input type="text" class="contact-form__input">La onda es poner los dos __ y el input
+	<input type="text" class="contact-form__input">La onda es poner los dos __ y el input
+	<input type="text" class="contact-form__input">La onda es poner los dos __ y el input
+	<input type="text" class="contact-form__input">La onda es poner los dos __ y el input
+	
+	De esta manera modifica a toda la clase
+	Si queremos modificar uno especifico de toda la clase
+	
+	<input type="text" class="contact-form__input--active"> El active se puede reemplazar por cualquier cosa
+	
+	Si esta metido un <h2> dentro de un <p> por ejemplo, se hace de esta manera
+
+<div class="contact-form">
+	<p type="text" class="contact-form__p"></p>
+		<h2 type="text" class="contact-form__p-h2"></h2>	
+
+Propiedades del texto:
+
+<div class="contact-form">
+	<p type="text" class="contact-form__p"></p>
+		<h2 type="text" class="contact-form__p-h2"></h2>
+
+Si por ejemplo tenemos esto, y queremos cambiarle el font size, se hace de esta manera
+
+.contact-form{
+	font-size: 25px; tambien se pueden usar otras unidades de medida, cm, m, etc, se recomienda usar em, que 1em = 16px, y se adapta a otros dispositivos
+}
+.contact-form__p-h2{
+	font-size: 1em; en este caso 1em = 25px ya que se lo dimos arriba al valor, ya que por ordenamiento, el valor es heredado de arriba 
+}
+
+Para sacar los valores por defecto del navegador se usa:
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+.contact-form{
+	font-size: 25px;
+	background-color: #000; De esta manera cambiamos el fondo de lo que querramos
+	width: 100vw; Seria la cantidad de largo de pantalla que queremos ocupar, se puede aplicar con % pero es realtivo a la caja que lo contiene
+	height: 100vw; Seria la cantidad de alto de pantalla que queremos ocupar
+}
+
+.contact-form__p-h2{
+	font-size: Medida de la fuente;
+	font-family: Tipografia de la fuente;
+	line-height: El tamaño que ocupa la letra; empieza desde el medio y 1 = 0.5 para arriba y 0.5 para abajo, siempre se centra, es decir si seria dos, seria 1 como siempre, y desde la parte inferior 0.5 y desde la parte superior 0.5, aumentando asi el tamaño que ocupa sin agrandar la letra
+	font-weight: El grosor de la fuente;
+	color: Cambiar el color;
+
+	Las mas utiles
+
+}
+
+Como exportar tipografias:
+Desde por ejemplo google fonts, vamos al + y copiamos la url de alguna fuente 
+
+Ejemplo:
+
+Esto va en el HTML en el head
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+Para implementarla se usa:
+
+Esto en los estilos de CSS
+font-family: 'Anton', sans-serif; o el que nos aparezca en la que nos guste pero seria las CSS rules 
+
+Normalize.css:
+Basicamente le saca las configuraciones por defecto de nuestro navegador, como se implementa, en el head de nuestro HTML
+<link rel="stylesheet" type="text/css" href="ubicacion y Normalize.css"> sino 
+<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+Elementos en bloque vs en linea:
+
+Los que son en bloque a diferencia de los de en linea, ocupan todo el ancho, por lo tanto por mas que agreguemos algo "Al lado" va a posicionarse abajo en la web
+
+Con la propiedad display se puede cambiar para que un h2 para de ser en bloque a en linea
+
+h2{
+	display: inline;
+} Por ejemplo
+
+Los elementos en linea y en bloque tiene propiedades:
+
+No se le puede dar height ni width a en linea pero si a los que son en bloque
+
+Padding:
+
+Son 4 y es la distancia entre el texto y las 4 "paredes" que lo rodean
+
+padding-top: 10px;
+padding-bottom: 10px;
+padding-right: 10px;
+padding-left: 10px;
+
+padding: 10px; Esto seria para darle a los 4 el mismo valor
+padding: 10px 20px; Asi le damos en el eje y / x
+padding: 10px 20px 30px 40px: top right bottom left, si falta alguno, toma el de su opuesto, si falta el de la izquierda, toma el de la derecha por ejemplo
+
+Como con el padding agregamos pixeles, al width y height, si queremos que no se deforme usamos el:
+
+box-sixing: border-box;
+
+Sino 
+
+box-sixing: content-box;
+
+Tambien tenemos el margin, es lo mismo que el padding pero desde afuera, es decir la distacia entre la caja y sus alrededores, no del texto y su caja como antes
+
+border-radius: 10px 50%; se puede usar como querramos para redondear
+
+border: 4px solid blue; basicamente resumimos todos los tipos de border en uno 
+
+box-shadow: 3px 4px 10px 0 #000; eje x, eje y, cuan desenfocada esta la sombra, cuanto borde va a tener generlmente se le da 0, y el color
+
+text-shadow: lo mismo pero con el texto, el borde no lo tiene
+
+Si a cualquiera de los dos, se los copia y pega, se genera mas intensidad
+
+transform: rotate(90deg); para rotar 
+
+Si le vamos a dar las mismas caracteriticas a dos clases, se puede hacer asi:
+
+.clase1, .clase2{
+	width: 100px;
+	height: 100px;
+} 
+
+Diferencia entre outline y border, el outline, no mueve ni agrega nada al elemento, solo se posiciona "por encima" mientras que el border adapta a los demas para incluirse
+
+Position:
+
+Le damos 4 propiedades nuevas, top, bottom, left, right, los cuales podemos usar para mover el elemento
+
+top: 20px por ejemplo
+
+-Static
+-Relative: Se sigue conservando el espacio que nosotros le habiamos dado, es decir, podemos mover la "Caja" adonde querramos pero el espacio el cual ocupaba antes no se va a ocupar por otra cosa
+
+Top y left son las que mas jerarquia tienen
+
+A su vez tambien el Relative nos da el z-index este seria el eje z, el cual a mayor valor, mas cerca de nosotros esta, el valor por defecto es 0 y si no lo modifcamos, por mas que todos sean 0, el mas reciente creado es el que mas "cerca nuestro" va a estar
+(Es de mucha utilidad que el z-index entre uno y otro se lleven un minimo de 50, por si necesitamos crear nuevas cajas)
+
+El z-index no afecta a "Padres e hijos" en valores positivos, si ponemos al hijo con un z-index negativo, si se pone por detras del padre, RECORDAR al padre NO ponerle el z-index
+
+-Absolute: El espacio reservado ya no lo esta mas, es decir, que lo que esta abajo se va a superponer, ya que va a tomar el espacio que antes tenia reservado
+
+Las cajas se posicionan respecto al contenedor o su viewport, depende si el contenedor esta posicionado o no
+
+Tambien los bloques se ajustan a su contenido, por mas que sean en bloque o en linea, es decir, solo ocupan lo que realmente ocupa su contenido, siempre y cuando nosotros no le demos valores
+
+Su Margin podemos definirlo de la siguiente forma:
+margin: Xpx Ypx, en sus respectivos ejes, sino tambien podemos poner los del eje Y en auto, y se centrara al medio, no pasa con el eje X 
+
+Si queremos centrar algo, se hace de la siguiente manera:
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+
+Para dejarlo en alguno de los costados, consta con ir sacando o agregando alguno
+  
+-Fixed: Igual al absolute, solamente que con el fixed queda fijado, como cuando la barra de navegacion queda ahi aunque scrolliemos para abajo
+
+Como normalmente nos queda abajo texto, o cosas, lo que se hace, es a eso darle un padding-top para que de esta forma nos quede un espacio desde el viewport, y luego a lo que fijamos, le damos un margin negativo
+
+-Sticky: Se comporta como un fixed, pero desde que llegamos a cierta posicion
+
+Display:
+ 	block: ocupa toda la linea
+ 	inline: ocupa solo lo que ocupa el contenido
+ 	inline-block: ocupa solo lo del contenido pero funciona como bloque, y se puede darle dimension
+ 	list-item:
+ 	table-cell: divide todo en tablas y se comporta como un cubo de la tabla
+ 	table-row: lo mismo pero se comporta como una fila de cubos
+ 	table-columm: lo mismo pero se comporta como una columna de cubos
+ 	grid: 
+ 	flex:
+
+
+ 	overflow: Nos sirve para agregarle la barra de navegacion a los elementos, se puede usar con auto, scroll que es obligar a que este, y tambien por separado con overflow-x e y con hidden lo que sobre o este por fuera de su margen lo recorta
+
+ 	float: al ponerlo dentro de un elemento, <div> u otro, y ponemos una imagen por ejemplo al darle valores como left o right hace que el texto la "envuelva" dejandola en la posicion seleccionada, para que no quede pegada al texto le damos margin
+
+-Pseudo Elementos:
+	Tipo de elemento::first-line {
+		Sirve para modificar la primera linea de un texto
+	}
+	
+	Tipo de elemento::first-letter {
+		Sirve para modificar la primera letra de un texto
+	}
+
+	Tipo de elemento::place-holder {
+		Sirve para modificar el texto del interior de un form, el que va hasta que comenzamos a escribir
+	}
+	
+	Tipo de elemento::place-selection {
+		Sirve para modificar el color de como se ve al seleccionar algo
+	}		
+
+	Tipo de elemento::after y before {
+		Sirve para agregar texto despues y antes, respectivamente de un tipo de elemento, tambien a este texto se lo puede modificar a gusto
+	}	
+
+-Pseudo Pseudo-clases:
+	:hover Sirve para que un elemento actue como querramos al pasarle por encima
+
+	:link que cambie un link al que no ingresamos alguna vez
+
+	:visited que cambien los links ya visitados
+
+	:active Que un elemento cambie una vez lo pulsamos, funciona basicamente igual al hover pero solo que tenemos que presionarlo
+
+	:focus funciona igual al active, la unica diferencia es que es usado principalmente en los input, y una vez dejamos de presionarlo no vuelve a su estado original hasta apretarlo nuevamente cosa que no pasaba con el anterior
+	Muy piola para darle estilo a los Form, haciendo que antes de escribir sean de un color y al seleccionarlos de otro por ejemplo
+
+	:lang(la abrevitura del lenguaje que queres modificar "es" por ejemplo pero si comillas) Sirve para modificar texto dependiendo su idioma CABE RECALCAR que al igual que le damos clases a los elemento en este caso se le da lang=""
+
+-Object-fit: 
+	:contain Es el que viene por defecto, y hace que el contenido se "adapte" a su contenedor, es decir si la imagen es cuadrada y el contendedor no, se centra en el medio dejando bordes blancos arriba y abajo
+
+	:cover Con esta funcion por el contrario, la imagen se adapta "recortandose" es decir haciendo ajustandose al contenedor para que no queden bordes blancos pero sin estirarse hacia algun lado
+	El cover es muy bueno para que cuando tenemos varias imagenes y achicamos la pantalla no se deformen
+
+
+	:none Lo que hace es que deja la resolucion original no importa el tamaño del contenedor
+
+	:scale-down Basicamente se fija cual tiene la resolucion mas chica, y elige esa 
+
+	min-widht: Sirve para que cuando bajemos de esa resolucion, se pase para abajo, sirve para todo
+
+-Object-position:
+	Sirve para mover la imagen para el lado que querramos, con top, bottom, etc y en Xem positivos o negativos
+
+-Colors:
+	Tenemos varias formas de poner los colores, entre ellas:
+
+	-Por nombre del Color, lo que si, depende el navegador, varian, por lo tanto no es lo recomendado
+
+	-Hexadecimal, de esta forma es mucho mas preciso, se pueden buscar en internet rapidamente
+
+	-RGB rgb(y la proporcion de cada uno que queremos de 0 a 256)
+
+	-RGBA Basicamente lo mismo que el rgb comun la unica diferencia es que son 4 elementos los que modificamos, y el ultimo es la opacidad que va desde 0 a 1
+
+@media only screen and (max-widht: Xpx) de esta forma hacemos que cuando sea la resolucion inferio a esa cantidad de pixeles, pase lo que querramos
+
+text-decoration: none; sirve para sacarle la linea de abajo a los botones con links
+
+text-align: center para centrar el texto
+
+Si cuando estamos con un hover ponemos > y un tipo de elemento, a, b, etc, lo que hacemos es que el efecto se aplique a este	
+
+FlexBox: 
+
+- main axis es el eje x de las flex box, tiene un main-start que seria la izquieda del eje x y el main-end que seria su derecha o fin del eje x 
+
+- cross axis es el eje y de las flex box, tambien tiene su cross-start y cross-end, pero su start es arriba y end abajo
+
+ Al darle display flex, es practicamente lo mismo que block, no cambian las propiedades que podemos cambiar, lo que si al tener un flex si por ejemplo tenemos dos items, estos se posicionan uno al lado del otro, y no debajo como el block, ya que se adaptan al contenedor y no al contenido, si un contenedor tiene mas contenido que la otra, se alarga mas la que mas tiene, para mantener la misma altura
+
+ Esto que hablamos recien se puede cambiar con flex grow 
+
+ Para las cajas flex tenemos que declarar el width y height obligatoriamente cambiamos
+
+ Tambien las cajas una vez llegamos a un achicar la ventana al punto que no entran, se van adaptando por defecto, esto se puede modificar
+
+ Propiedades del CONTENEDOR: Es decir, afectan a los item, pero se escriben en el contenedor 
+
+ - flex-direction: 
+ row : por defecto, van en filas
+
+ row-reverse: se comportan al reves, es decir de derecha a izquierda
+
+ colum: se comportan como columnas no como filas
+
+ colum-reverse: lo mismo que el row row-reverse
+
+ flex-wrap: 
+
+ -wrap: cuando se llega al tamñano de la caja, al momento de estar achicando una ventana, la caja automaticamente se pasa para abajo, pero tiene la limitacion que no se agranda, ni se achica la caja al modificar el tamaño de la ventana
+
+ - wrap-reverse: las cajas van para arriba y no hacia abajo
+
+ Si vamos a usar el direction y wrap usamos flex-flow que basicamente es para usar ambos, ej: flex-flow: colum wrap
+
+ justify-content: center para centrar las cajas
+
+ - space-around para darle el mismo espacio de margin a todas las cajas entre si
+
+ - space-between deja el maximo espacio entre cajas posible, es decir las dos de los laterales contra la pared, y el maximo espacio entre las otras
+
+ - space-evenly es similar a around, la unica diferencia es que el around le daba por ejemp 25px de cada lado, entonces si tenias una caja que compatia lado con otra el margin total era de 50, en este caso cuando comparte margin se divide entre dos y da una porcion para cada una asi sigue manteniendo el margin de 25px 
+
+ align-items para alinear solo una linea de items
+
+ al superar la linea de items se alinea directamente al medio
+
+ - stretch es la que viene por defecto
+
+ Con esta propiedad si no le damos height se estira la box hasta el final
+
+ - center para centrarlos verticalmente
+
+ - flex-end los pone al final, es deci la parte de abajo del eje ya
+ 
+ - flex-start los pone al principio, ademas que al sacarle el height lo adapta al tamaño del contenido
+
+
+ align-content lo mismo pero con mas de una linea
+
+ - center para centrarlos verticalmente
+
+ - flex-end los pone al final, es deci la parte de abajo del eje ya
+
+ - flex-start los pone al principio, ademas que al sacarle el height lo adapta al tamaño del contenido 
+
+ flex-grow: tiene la utilidad de divir el espacio que tengamos en partes iguales, es decir, que por ejemplo tenemos 3 cajas, las cuales miden 120px y tenemos un espacio total de 1000px, este espacio sobrante se divide en partes iguales para estas cajas, tomando estas el tamaño del espacio que tenemos disponibles, podemos limitarlo con un min-widht 
+
+ Propiedades del ITEM: 
+
+ align-self: 
+
+ Usando las mismas propiedades que el align-items pero para un Item en particular 
+
+ Al usar un margin y darle un valor "auto" el efecto que genera en este caso es todo lo contrario a lo indicado, es decir margin-left: auto tira la caja a la derecha 
+
+ Tambien al usar dos contrarios, es decir por ejemplo margin-bottom y margin-top, y a los dos les damos valor auto, se centraria en el medio pero del eje Y no X para el X debemos usar left y right 
+
+ Si queremos centrarlo en X e Y ponemos margin: auto y listo
+
+flex-grow: tiene la utilidad de divir el espacio que tengamos en partes iguales, es decir, que por ejemplo tenemos 3 cajas, las cuales miden 120px y tenemos un espacio total de 1000px, este espacio sobrante se divide en partes iguales para estas cajas, tomando estas el tamaño del espacio que tenemos disponibles, podemos limitarlo con un min-widht 
+
+Cosa a tener en cuenta, que si por ejemplo esta caracteritica se la damos a dos item por separado, y uno tiene valor 2 y otro 1, se divide el total en 3 partes y dos quedan para el item con valor 2 y la otra parte para el de valor 1, es decir, el espacio vacio se divide en la cantidad total de la suma de los difentes valores del grow, y se queda cada elemento con la parte dada por el valor que tenia 
+
+flex-shrink: sede espacio cuando no hay espacio disponible es decir, si necesitamos 600px para tener 3 cajas, y nuestra ventana esta midiendo 500px por ejemplo, y una caja tiene esta caracteritica se achicaria para que las demas entren si el valo baja de uno, en vez de seder, las demas seden para que esta entre, si ponemos 0 directamente no sede espacio, es decir siempre queda fija
+
+flex-basis: funciona como el width pero con mas importancia 
+
+TENER EN CUENTA, que al usar estas tres funcionalidades, al pasar el width mas grande dado, se repartira en partes iguales el espacio vacio
+
+flex solo abarca el grow shrink y basis todo en uno 	
+
+order, basicamente funciona como un z-index pero en el eje x, es decir, de izquierda a derecha si el flex-direction esta por defecto, sino se adapta a este
+
+Recordar al textarea sacarle el resize con un resize:none para que no lo pueda agrandar
+
+El background puede ir con un linear-gradient(to hacia donde va, Color con el que empieza, Color con el que termina) 
+
+Ademas de dar estilos por class, y por tipo, ahora tambien podemos hacelo por de esta forma .NombreClase TipoDeElemento[type="TipoDeElementoDeForm"]:focus hover o cualquiera 

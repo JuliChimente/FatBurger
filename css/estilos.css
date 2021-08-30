@@ -1,0 +1,574 @@
+/* Header */
+
+* {
+	font-family: 'Georama', sans-serif;
+	font-weight: 100px;
+}
+
+.Flex-Nav {
+	display: flex;
+	flex-wrap: nonwrap;
+	background-color: #CD5720;
+	min-height: 160px;
+}
+
+.Flex-Nav__ul {
+	margin: auto;
+	list-style: none;
+}
+
+.Flex-Nav__li {
+	display: inline-flex;
+	align-items: center;
+}
+
+.Logo {
+	height: 140px;
+	width: 140px;
+	margin: 10px;
+	min-width: 140px;
+}
+
+.Flex-Nav__li a {
+	text-decoration: none;
+	font-size: 20px;
+	color: #fff;
+	text-shadow: 1px 1px 5px black;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.Flex-Nav__li img {
+	height: 120px;
+	width: 120px;
+	margin-left: 10px;
+}
+
+.Opinion img {
+	transform: rotate(15deg);
+}
+
+.Flex-Nav__li:hover > img {
+	width: 130px;
+	height: 130px;
+	transition: 0.2s;
+	margin-bottom: 15px;
+}
+
+.Flex-Nav__li:hover > a {
+	text-shadow: 5px 5px 10px black;
+	transition: 0.2s;
+	margin-bottom: 20px;
+}
+
+/* Foto Burger */
+
+.BurgerImg {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 100px;
+}
+
+/* Información */
+
+.ContainerGral {
+	background-color: #4D4D4D;
+	color: #fff;
+	text-shadow: 2px 2px 3px black;
+}
+
+.Titulo-Informacion {
+	margin: auto;
+	text-align: center;
+	background-color: #FFBF27;
+	width: 290px;
+	padding: 10px;
+	font-size: 35px;
+}
+
+.InfoContainer {
+	margin-top: 70px;
+	margin-bottom: 20px;
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-around;
+	font-size: 30px;
+	color: #FFBF27;
+}
+
+
+.Informacion {
+	width: 200px;
+	padding-top: 10px;
+	margin: 20px 0px;
+	text-align: center;
+}
+
+.Informacion2 {
+	text-align: center;
+	width: 230px;
+	padding: 10px 10px;
+	margin: 20px 0px;
+}
+
+.Informacion3 {
+	text-align: center;
+	width: 180px;
+	padding-top: 10px;
+	margin: 20px 0px;
+}
+
+.TextoInformacion {
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-around;
+	font-size: 20px;
+	margin-bottom: 100px;
+}
+
+.TextoInformacion1 {
+	text-align: center;
+	width: 200px;
+	box-sizing: content-box;
+}
+.TextoInformacion2 {
+	text-align: center;
+	width: 220px;
+	box-sizing: content-box;
+	margin-left: 20px;	
+}
+.TextoInformacion3 {
+	text-align: center;
+	width: 200px;
+	padding-left: 10px;
+}
+
+/* Menú */
+
+.Menu_Burgers {
+	background-color: #272727;
+	color: #fff;
+	padding-top: 100px;
+	text-shadow: 2px 2px 3px black;
+}
+
+.Menu__Titulo {
+	margin: auto;
+	text-align: center;
+	background-color: #FFBF27;
+	width: 200px;
+	padding: 10px;
+	font-size: 35px;
+}
+
+.Burgers {
+	margin-top: 70px;
+	margin-bottom: 50px;
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-around;
+	font-size: 30px;
+	text-align: center;
+	color: #FFBF27;
+}
+
+.Descripciones {
+	margin-bottom: 50px;
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-around;
+	font-size: 20px;
+}
+
+.Burger__1 {
+	width: 250px;
+	padding: 25px;
+}
+
+.Burger__2 {
+	width: 280px;
+	padding: 20px;
+}
+
+.Burger__3 {
+	width: 250px;
+	padding: 20px;
+}
+
+.Burger__1-Description {
+	width: 150px;	
+}
+.Burger__2-Description {
+	width: 150px;
+}
+.Burger__3-Description {
+	width: 150px;	
+}
+
+.Burgers__2 {
+	margin-top: 70px;
+	margin-bottom: 50px;
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-around;
+	font-size: 30px;
+	text-align: center;
+	color: #FFBF27;
+}
+
+.Descripciones__2 {
+	margin-bottom: 50px;
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-around;
+	font-size: 20px;
+}
+
+.Burger__4-Description {
+	width: 150px;	
+}
+.Burger__5-Description {
+	width: 150px;
+}
+.Burger__6-Description {
+	width: 150px;	
+}
+
+.Burger__4 {
+	width: 250px;
+	padding: 20px;
+}
+
+.Burger__5 {
+
+	width: 250px;
+	padding: 20px;
+}
+
+.Burger__6 {
+
+	width: 250px;
+	padding: 20px;
+}
+
+.InfoAdicional {
+	justify-content: center;
+	padding-bottom: 80px;
+	padding-top: 80px;
+	text-align: center;
+	font-size: 22px;
+}
+
+/* Footer */
+
+.Footer {
+	background-color: #000;
+	color: #fff;
+	display: inline-flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 100px;
+}
+
+.Footer__Logo {
+	width: 80px;
+	margin: auto;
+}
+
+.Footer__Instagram {
+	width: 80px;
+	margin: auto;
+}
+
+.Footer__Info {
+	font-size: 18px;
+	margin: auto;
+} 
+
+.Body-Responsive {
+	display: none;
+}
+
+@media only screen and (max-width: 1300px) {
+
+* {
+	font-family: 'Georama', sans-serif;
+	font-weight: 100px;
+}
+
+.Body {
+	display: none;
+}
+
+.Body-Responsive {
+	display: flex;
+}
+
+header {
+	display: flex;
+} 
+
+.Flex-Nav-Responsive {
+	background-color: #CD5720;
+	display: block;
+	width: 100vw;
+	height: 160px;
+}
+
+.Logo-Responsive {
+	width: 90px;
+	height: 90px;
+	margin: auto;
+	padding: 5px;
+}
+
+
+.Flex-Nav__ul-Responsive {
+	display: flex;
+	list-style: none;
+	text-align: center;
+	margin: 10px;
+
+}
+
+
+.Flex-Nav__li-Responsive a {
+	text-decoration: none;
+	font-size: 15px;
+	color: #fff;
+	text-shadow: 1px 1px 5px black;
+}
+
+.Flex-Nav__li-Responsive img {
+	display: none;
+}
+
+
+/* Foto Burger */
+
+.BurgerImg-Responsive {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 100px;
+}
+
+/* Información */
+
+.ContainerGral-Responsive {
+	background-color: #4D4D4D;
+	color: #fff;
+	text-shadow: 2px 2px 3px black;
+}
+
+.Titulo-Informacion-Responsive {
+	margin: auto;
+	text-align: center;
+	background-color: #FFBF27;
+	width: 290px;
+	padding: 10px;
+	font-size: 35px;
+}
+
+.InfoContainer-Responsive {
+	margin-top: 70px;
+	margin-bottom: 20px;
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-around;
+	font-size: 30px;
+	color: #FFBF27;
+}
+
+
+.Informacion-Responsive {
+	width: 200px;
+	padding-top: 10px;
+	margin: 20px 0px;
+	text-align: center;
+}
+
+.Informacion2-Responsive {
+	text-align: center;
+	width: 230px;
+	padding: 10px 10px;
+	margin: 20px 0px;
+}
+
+.Informacion3-Responsive {
+	text-align: center;
+	width: 180px;
+	padding-top: 10px;
+	margin: 20px 0px;
+}
+
+.TextoInformacion-Responsive {
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-around;
+	font-size: 20px;
+	margin-bottom: 100px;
+}
+
+.TextoInformacion1-Responsive {
+	text-align: center;
+	width: 200px;
+	box-sizing: content-box;
+}
+.TextoInformacion2-Responsive {
+	text-align: center;
+	width: 220px;
+	box-sizing: content-box;
+	margin-left: 20px;	
+}
+.TextoInformacion3-Responsive {
+	text-align: center;
+	width: 200px;
+	padding-left: 10px;
+}
+
+/* Menú */
+
+.Menu_Burgers-Responsive {
+	background-color: #272727;
+	color: #fff;
+	padding-top: 100px;
+	text-shadow: 2px 2px 3px black;
+}
+
+.Menu__Titulo-Responsive {
+	margin: auto;
+	text-align: center;
+	background-color: #FFBF27;
+	width: 200px;
+	padding: 10px;
+	font-size: 35px;
+}
+
+.Burgers-Responsive {
+	margin-top: 70px;
+	margin-bottom: 50px;
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-around;
+	font-size: 30px;
+	text-align: center;
+	color: #FFBF27;
+}
+
+.Descripciones-Responsive {
+	margin-bottom: 50px;
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-around;
+	font-size: 20px;
+}
+
+.Burger__1-Responsive {
+	width: 250px;
+	padding: 25px;
+}
+
+.Burger__2-Responsive {
+	width: 280px;
+	padding: 20px;
+}
+
+.Burger__3-Responsive {
+	width: 250px;
+	padding: 20px;
+}
+
+.Burger__1-Description-Responsive {
+	width: 150px;	
+}
+.Burger__2-Description-Responsive {
+	width: 150px;
+}
+.Burger__3-Description-Responsive {
+	width: 150px;	
+}
+
+.Burgers__2-Responsive {
+	margin-top: 70px;
+	margin-bottom: 50px;
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-around;
+	font-size: 30px;
+	text-align: center;
+	color: #FFBF27;
+}
+
+.Descripciones__2-Responsive {
+	margin-bottom: 50px;
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-around;
+	font-size: 20px;
+}
+
+.Burger__4-Description-Responsive {
+	width: 150px;	
+}
+.Burger__5-Description-Responsive {
+	width: 150px;
+}
+.Burger__6-Description-Responsive {
+	width: 150px;	
+}
+
+.Burger__4-Responsive {
+	width: 250px;
+	padding: 20px;
+}
+
+.Burger__5-Responsive {
+
+	width: 250px;
+	padding: 20px;
+}
+
+.Burger__6-Responsive-Responsive {
+
+	width: 250px;
+	padding: 20px;
+}
+
+.InfoAdicional-Responsive {
+	justify-content: center;
+	padding-bottom: 80px;
+	padding-top: 80px;
+	text-align: center;
+	font-size: 22px;
+}
+
+/* Footer */
+
+.Footer-Responsive-Responsive {
+	background-color: #000;
+	color: #fff;
+	display: inline-flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 100px;
+}
+
+.Footer__Logo-Responsive {
+	width: 80px;
+	margin: auto;
+}
+
+.Footer__Instagram-Responsive {
+	width: 80px;
+	margin: auto;
+}
+
+.Footer__Info-Responsive {
+	font-size: 18px;
+	margin: auto;
+} 
+
+
+}

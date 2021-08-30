@@ -1,0 +1,158 @@
+ <etiqueta atributo="valor"></etiqueta> Basico en HTML
+ Ej:
+ <button color="rojo" tamaño="grande" borde="negro"></button>
+
+ -TIPOS DE ETIQUETAS:
+
+<br> o <br/> Seria como un punto y aparte o un endl
+
+<h1> Para poner titulos
+    Si se abren y cierran como este caso es porque va algo adentro
+</h1> Van del h1 al h6, y no se puede repetir los h1, el h2 y h3 bastantes pero no zarparnos y los demas si las que querramos, recordemos que cada uno tiene su contexto para usarlo
+
+<h1>Hola Mundo</h1> A su vez tambien el N va dando el tamaño 
+<h2>Hola Mundo</h2> Siendo 1 el mas grande y 6 el mas chico
+<h3>Hola Mundo</h3>
+<h4>Hola Mundo</h4>
+<h5>Hola Mundo</h5>
+<h6>Hola Mundo</h6>
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    Esto se hace con Lorem y un tab
+
+</p> Esta sirve para escribir nuestros parrafos
+
+<b></b> Negrita
+<i></i> Italica o inclinada
+<strike></strike> Tachada
+<small></small> Chiquita
+
+Algunas etiquetas como las h1, ocupan toda la linea, que basicamente es que si pones un . o algo corto, igualmente lo demas va abajo y no al lado, por otra parte, algunas etiquetas como b, si se adaptan a su contenido, y si no ocupa toda la linea lo demas va a su lado
+
+Linea va referido al tamaño de la caja, recordemos que html es basicamente el ordenamiento de la estructura de la web, la cual seria basicamente un pieza, que podriamos decir que es el body y sus muebles, los cuales a cada uno hay que darle un lugar
+
+Si ponemos un:
+<div>
+    <h1>texto</h1>    
+</div> 
+
+De esta manera el h1, no ocupa toda la linea sino solo el espacio de la primera linea del div
+
+<a href="RECORDAR PONER https:// direccion url de la otra pag">texto del boton</a> Te redirecciona a otra pagina, href es el atributo, con el cual redireccionamos a la persona a la otra pagina
+
+Existen distintos tipos de rutas:
+
+-Locales: que serian las que tenemos nosotros en nuestra PC por ejemplo
+-Externas: las que estan almacenadas de forma externa, osea las que no estan metidas en nuestra pc 
+
+<a href="Nombre y tipo de archivo">texto del boton</a> Ademas podemos redirigirnos a otro archivo que se encuentre en la misma carpeta que el index de esta manera, a su vez, si ponemos el nombre del archivo principal, se puede volver a la pagina anterior
+
+<a href="Ruta, nombre y tipo de archivo">texto del boton</a> De esta forma podemos acceder a carpetas que contengan un archivo para redirigirnos
+
+<a href="../ nombre y tipo de archivo">texto del boton</a> Con esto ya una vez metido en una carpeta dentro de otra carpeta, nos permite salir de esta
+
+Para abrir el enlace en una pagina aparte <a href="link" target="_BLANK"></a>
+
+Listas:
+-Desordenadas: 
+<ul> Esta seria por asi decirlo el papel donde escribimos
+    <li></li> Y esto lo que escribimos
+</ul>
+
+CONTENIDO MULTIMEDIA:
+-Imagenes:
+<img src="ruta, o nombre de la imagen, con su tipo"> 
+
+Para cambiar el tamaño de la imagen, lo que debemos hacer es usar:
+<img src="pepito.png" height="300px" width="300px" alt="Muy importante para el CEO, basicamente es el nombre que aparece si no se encuentra la imagen que queremos mostrar" title="Lo que aparece al pasar el mouse por arriba de la imagen"> Tratar de si la foto es cuadrada, que el H y W sean iguales, sino se deformara la foto 
+
+Lo que si es medio al pedo, debido a que despues lo vamos a modificar con css
+
+-Videos:
+<video src="Ruta del video, con formato" controls: Son los controles del video></video>
+
+-Audio:
+<audio src="Ruta del audio, con formato, tambien transforma video en audio" controls></audio> Basicamente lo mismo que video
+
+Divs:
+Es muy similar a un <p></p> pero es justamente para separar y agrupar ciertas cosas que no pertenencen a un parrafo, por ejemplo, luego de explicar algo, que esta justamente en un P, queremos mostrar productos y sus precios, los ponemos en un D, si bien se podria poner en un P, queda mejor en un D, ya que le da orden a la pagina
+
+Formularios:
+<form>
+    <input type="" name="Esto es para el backend">
+    <input type=""> Por defecto es de tipo texto o text
+    <input type="text" required=""> Required es para OBLIGAR a llenar el campo
+    <input type="number" value="44047818"> Value, es para darle un valor PREDEFINIDO a ese apartado del formulario
+    <input type="password">
+    <input type="email">
+    <input type="color">
+    <input type="range" min="0" max="10"> Debemos asignarle un rango
+    <input type="date">
+    <input type="time">
+    <input type="button">
+    <input type="submit"> La diferencia con el de arriba es que viene con un "Texto" predefinido que es ENVIAR, pero depende donde estes, tu navegador lo cambia de idioma automaticamente
+    <textarea readonly=""></textarea> Sirve para escribir, sacando que tenga el readonly, que solo permite leer
+</form>
+
+<!DOCTYPE html>
+<html>//Como un main, basicamente aca adentro va nuestra web
+<head>//En este apartado va lo que no se puede ver en la pagina
+    <meta charset="utf-8"> Es para que nos ACEPTE y MUESTRE los acentos y otros caracteres especiales
+    <meta name="keywords" content="Diferentes etiquetas que sirvan para describir lo que hacemos en la web">
+    <meta name="description" content="Descripcion entre 70 y 140 caracteres">
+    <meta name="author" content="El nombre del creador de la pagina">
+    <meta name="copyright" content="Nombre de la empresa"> Si estamos registrados y tenemos cosas a nuestro nombre, aca lo ponemos, por ejemplo, si seria la pagina de facebook, pondriamos facebook Inc.
+    <meta name="robots" content="index" content="noindex"> Basicamente index, es que si nos buscan por el nombre de nuestra pag, o alguna etiqueta puesta antes, nos encuentren, si ponemos noindex, es para que no nos encuentren
+    <meta name="robots" content="follow" content="nofollow">
+    <title>Primera página web</title>
+    <link rel="icon" href="logo.ico">
+</head>//Aca se cierra este apartado
+<body>//Esto es todo lo que podemos ver
+<header>
+    <nav>
+        Aca adentro metemos toda la barra superior de la web, con botones para navegar por la misma
+    </nav>
+</header>
+<article>
+    <section>
+        Dentro de este apartado colocamos la info de la web, como titulo, subtitulo, info, etc
+    </section>
+</article>
+<aside>
+    Esto seria la parte de algun lateral a la cual podemos meter lo que deseemos
+    <h4>Redes sociales:</h4>
+    <a href="URL">Instragram o nombre de red social</a>
+</aside>
+<footer>
+    Aca va el copyright, se ubica como su nombre lo indica en el pie de la pagina, podemos dejar nuestras redes
+
+</footer>
+<table border="Dimension en px del borde de la tabla">
+    <tr>
+        <td><center><b>Lo que querramos ponerle a la tabla</b></center></td>
+        Ahi va el center para centrar el contenido de la tabla
+    </tr>
+    <tr>
+        <td>Los datos de lo que pusimos arriba, por ejemplo, Nombre, juli</td>
+    </tr>
+</table>
+<center>
+    Sirve para centrar las cosas, PD no es recomendado usarlo, luego lo centras con css
+</center>
+<a href="# nombre del id"></a>
+Luego lo que se hace es crear un titulo sea con h1, h2, hx
+<h1 id="La id que querramos para usar arriba"></h1>
+</body>
+</html>//Aca se finaliza
+
+COSAS POR APRENDER:
+-Posicionamiento: Colocar las cosas correctamente para obtener mejor posicionamiento, que seria en que posicion aparece nuestra pagina
+-Importante no darle con HTML aspecto visual, ya que eso se hace con css, siempre enfocarse en generarar una buena estructura para la pagina
+-Al poner un height de 100vp tapa las partes blancas como pasaba sin flex
