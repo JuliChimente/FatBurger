@@ -3,6 +3,7 @@
 * {
 	font-family: 'Georama', sans-serif;
 	font-weight: 100px;
+	scroll-behavior: smooth;
 }
 
 .Flex-Nav {
