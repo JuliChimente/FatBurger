@@ -346,6 +346,9 @@ header {
 	display: none;
 }
 
+.Menu-Responsive {
+	margin: 0px 10px;
+}
 
 /* Foto Burger */
 
@@ -387,11 +390,13 @@ header {
 	width: 200px;
 	padding-top: 10px;
 	margin: 20px 0px;
+	padding-right: 15px;
 }
 
 .Informacion2-Responsive {
 	width: 230px;
-	padding: 10px 10px;
+	padding: 10px 0px;
+	padding-right: 15px;
 	margin: 20px 0px;
 }
 
@@ -399,6 +404,7 @@ header {
 	width: 180px;
 	padding-top: 10px;
 	margin: 20px 0px;
+	padding-right: 5px;
 }
 
 .TextoInformacion-Responsive {
