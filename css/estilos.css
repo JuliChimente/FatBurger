@@ -534,6 +534,7 @@ header {
 
 
 .Burger__1-Responsive {
+	width: 280px;
 	height: 450px;
 	background-color: #212121;
 	border-radius: 10px;
@@ -543,7 +544,7 @@ header {
 	align-items: center;
 	justify-content: space-evenly;
 	box-sizing: border-box;
-	margin: 20px 32px;
+	margin: 20px 50px;
 }
 
 .Burger__1-Responsive img {
