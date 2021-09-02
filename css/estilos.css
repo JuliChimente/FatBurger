@@ -346,10 +346,11 @@ header {
 }
 
 .Logo {
-	width: 90px;
-	height: 90px;
+	width: 120px;
+	height: 120px;
 	margin: auto;
 	padding: 5px;
+	max-width: 120px;
 }
 
 
@@ -538,7 +539,7 @@ header {
 	margin: 10px 0px;
 }
 
-.InfoAdicional-Responsive {
+.InfoAdicional {
 	justify-content: center;
 	padding-bottom: 20px;
 	padding-top: 20px;
