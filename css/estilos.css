@@ -313,10 +313,6 @@
 .Footer__Info {
 	font-size: 18px;
 	margin: auto;
-} 
-
-.Body-Responsive {
-	display: none;
 }
 
 .Footer-Responsive {
@@ -329,11 +325,11 @@
 	font-weight: 100px;
 }
 
-.Body {
-	display: none;
+.Footer-Responsive {
+	display: inline-flex;
 }
 
-.Body-Responsive {
+.Body {
 	display: flex;
     flex-direction: column;
     width: 100%;
@@ -343,14 +339,14 @@ header {
 	display: flex;
 } 
 
-.Flex-Nav-Responsive {
+.Flex-Nav {
 	background-color: #CD5720;
 	display: block;
 	width: 100vw;
 	height: 160px;
 }
 
-.Logo-Responsive {
+.Logo {
 	width: 90px;
 	height: 90px;
 	margin: auto;
@@ -358,7 +354,7 @@ header {
 }
 
 
-.Flex-Nav__ul-Responsive {
+.Flex-Nav__ul {
 	display: flex;
 	list-style: none;
 	text-align: center;
@@ -367,25 +363,20 @@ header {
 }
 
 
-.Flex-Nav__li-Responsive a {
+.Flex-Nav__li a {
 	text-decoration: none;
 	font-size: 15px;
 	color: #fff;
 	text-shadow: 1px 1px 5px black;
 }
 
-.Flex-Nav__li-Responsive img {
+.Flex-Nav__li img {
 	display: none;
 }
 
-.Menu-Responsive {
-	margin: 0px 10px;
-}
-
-
 /* Foto Burger */
 
-.BurgerImg-Responsive {
+.BurgerImg {
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -394,13 +385,13 @@ header {
 
 /* Información */
 
-.ContainerGral-Responsive {
+.ContainerGral {
 	background-color: #4D4D4D;
 	color: #fff;
 	text-shadow: 2px 2px 3px black;
 }
 
-.Titulo-Informacion-Responsive {
+.Titulo-Informacion {
 	margin: auto;
 	text-align: center;
 	background-color: #FFBF27;
@@ -409,7 +400,7 @@ header {
 	font-size: 25px;
 }
 
-.InfoContainer-Responsive {
+.InfoContainer {
 	width: 100%;
 	margin: 20px 0px;
 	display: inline-flex;
@@ -419,28 +410,28 @@ header {
 	color: #FFBF27;
 }
 
-.Informacion-Responsive {
+.Informacion {
 	width: 200px;
 	padding-top: 10px;
 	margin: 20px 0px;
 	padding-right: 15px;
 }
 
-.Informacion2-Responsive {
+.Informacion2 {
 	width: 230px;
 	padding: 10px 0px;
 	padding-right: 15px;
 	margin: 20px 0px;
 }
 
-.Informacion3-Responsive {
+.Informacion3 {
 	width: 180px;
 	padding-top: 10px;
 	margin: 20px 0px;
 	padding-right: 5px;
 }
 
-.TextoInformacion-Responsive {
+.TextoInformacion {
 	width: 100%;
 	display: inline-flex;
 	justify-content: space-around;
@@ -448,18 +439,18 @@ header {
 	margin-bottom: 40px;
 }
 
-.TextoInformacion1-Responsive {
+.TextoInformacion1 {
 	text-align: center;
 	width: 200px;
 	box-sizing: content-box;
 }
-.TextoInformacion2-Responsive {
+.TextoInformacion2 {
 	text-align: center;
 	width: 220px;
 	box-sizing: content-box;
 	margin-left: 20px;	
 }
-.TextoInformacion3-Responsive {
+.TextoInformacion3 {
 	text-align: center;
 	width: 200px;
 	padding-left: 10px;
@@ -467,14 +458,14 @@ header {
 
 /* Menú */
 
-.Menu_Burgers-Responsive {
+.Menu_Burgers {
 	background-color: #272727;
 	color: #fff;
 	padding-top: 100px;
 	text-shadow: 2px 2px 3px black;
 }
 
-.Menu__Titulo-Responsive {
+.Menu__Titulo {
 	margin: auto;
 	text-align: center;
 	background-color: #FFBF27;
@@ -483,7 +474,7 @@ header {
 	font-size: 30px;
 }
 
-.Burgers-Responsive {
+.Burgers {
 	margin-top: 70px;
 	margin-bottom: 30px;
 	width: 100%;
@@ -494,7 +485,7 @@ header {
 	color: #FFBF27;
 }
 
-.Descripciones-Responsive {
+.Descripciones {
 	margin-bottom: 50px;
 	width: 100%;
 	display: inline-flex;
@@ -503,17 +494,17 @@ header {
 	
 }
 
-.Descripciones-Responsive ul {
+.Descripciones ul {
 	list-style: none;
 }
 
-.Descripciones-Responsive li {
+.Descripciones li {
 	margin: 10px 0px;
 	text-align: center;
 }
 
 
-.Burger__1-Responsive {
+.Burger__1 {
 	width: 280px;
 	height: 450px;
 	background-color: #212121;
@@ -527,7 +518,7 @@ header {
 	margin: 20px 50px;
 }
 
-.Burger__1-Responsive img {
+.Burger__1 img {
 	width: 150px;
 }
 
@@ -536,7 +527,7 @@ header {
 	color: #fff;
 }
 
-.BurgerDescription-Responsive {
+.BurgerDescription {
 	width: 200px;
 	text-align: left;
 	justify-content: center;
@@ -544,79 +535,8 @@ header {
  	font-size: 20px;
 }
 
-.BurgerDescription-Responsive li {
+.BurgerDescription li {
 	margin: 10px 0px;
-}
-
-.Burger__2-Responsive {
-	width: 280px;
-	padding: 20px;
-}
-
-.Burger__3-Responsive {
-	width: 250px;
-	padding: 20px;
-}
-
-
-.Burger__2-Description-Responsive {
-	width: 150px;
-}
-.Burger__3-Description-Responsive {
-	width: 150px;	
-}
-
-.Burgers__2-Responsive {
-	width: 100%;
-	display: inline-flex;
-	margin-bottom: 30px;
-	justify-content: space-around;
-	font-size: 23px;
-	text-align: center;
-	color: #FFBF27;
-}
-
-.Descripciones__2-Responsive {
-	margin-bottom: 50px;
-	width: 100%;
-	display: inline-flex;
-	justify-content: space-around;
-	font-size: 15px;
-}
-
-.Descripciones__2-Responsive ul {
-	list-style: none;
-}
-
-.Descripciones__2-Responsive li {
-	margin: 10px 0px;
-	text-align: center;
-}
-
-.Burger__4-Description-Responsive {
-	width: 150px;	
-}
-.Burger__5-Description-Responsive {
-	width: 150px;
-}
-.Burger__6-Description-Responsive {
-	width: 150px;	
-}
-
-.Burger__4-Responsive {
-	width: 250px;
-	padding: 20px;
-}
-
-.Burger__5-Responsive {
-	margin-top: 10px;
-	width: 250px;
-	padding: 20px;
-}
-
-.Burger__6-Responsive{
-	width: 250px;
-	padding: 20px;
 }
 
 .InfoAdicional-Responsive {
