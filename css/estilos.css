@@ -329,7 +329,7 @@
 	display: inline-flex;
 }
 
-.Body {
+Body {
 	display: flex;
     flex-direction: column;
     width: 100%;
