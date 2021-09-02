@@ -329,11 +329,10 @@
 	display: inline-flex;
 }
 
-Body {
-	display: flex;
-    flex-direction: column;
-    width: 100%;
-}
+.Footer {
+	display: none;
+}	
+	
 
 header {
 	display: flex;
