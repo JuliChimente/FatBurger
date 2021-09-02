@@ -31,7 +31,7 @@
         <meta name="author" content="Julián Chimente">
         <link rel="icon" href="assets/img/Logo.ico">
     </head>
-        <div class="Body">
+         <div class="Body">
             <header>
                 <nav class="Flex-Nav">
                     <div class="Logo">
@@ -43,16 +43,16 @@
                             <li class="Flex-Nav__li Menu"><a href="#Menu">Menú</a></li>
                         </div>
                         <div class="ArmaTuPropiaBurger">
-                            <a href="opinion.html"><li class="Flex-Nav__li ArmaTuPropiaBurger"><img src="assets/img/Menu6.png"></a></li>
-                            <li class="Flex-Nav__li ArmaTuPropiaBurger"><a href="opinion.html">Arma tu propia Burger</a></li>
+                            <a href="opinion.html" target="_BLANK"><li class="Flex-Nav__li ArmaTuPropiaBurger"><img src="assets/img/Menu6.png"></a></li>
+                            <li class="Flex-Nav__li ArmaTuPropiaBurger"><a href="opinion.html" target="_BLANK">Arma tu propia Burger</a></li>
                         </div>
                         <div class="Pedido">
                             <li class="Flex-Nav__li Pedido"><a href="https://www.instagram.com/fatburger.co/" target="_BLANK"><img src="assets/img/Pedido.png"></a></li>
                             <li class="Flex-Nav__li Pedido"><a href="https://www.instagram.com/fatburger.co/" target="_BLANK">Hace tu pedido</a></li>
                         </div>
                         <div class="Opinion">
-                            <li class="Flex-Nav__li Opinion"><a href="opinion.html"><img src="assets/img/Opinar.png"></a></li>
-                            <li class="Flex-Nav__li Opinion"><a href="opinion.html">Dejanos tu opinión</a></li>
+                            <li class="Flex-Nav__li Opinion"><a href="opinion.html" target="_BLANK"><img src="assets/img/Opinar.png"></a></li>
+                            <li class="Flex-Nav__li Opinion"><a href="opinion.html" target="_BLANK">Dejanos tu opinión</a></li>
                         </div>
                     </ul>
                 </nav>
@@ -90,71 +90,97 @@
                 </section>
                 <section class="Menu_Burgers">
                     <div class="Menu__Titulo" id="Menu">Menú</div>
-                    <div class="Burgers">
-                        <div class="Burger__1">Cheese Burger</div>
-                        <div class="Burger__2">Cheese & Bacon Burger</div>
-                        <div class="Burger__3">Cheese & Onion Burger</div>
-                    </div>
-                        <div class="Descripciones">  
-                            <div class="Burger__1-Description">
-                                <ul>
-                                    <li>Pan de Papa</li>
-                                    <li>Medallon 80grs</li>
-                                    <li>Cheddar </li>
-                                </ul>                
-                            </div>
-                            <div class="Burger__2-Description">
-                                <ul>
-                                    <li>Pan de Papa</li>
-                                    <li>Medallon 80grs</li>
-                                    <li>Cheddar</li>
-                                    <li>Panceta Ahumada </li>
-                                </ul>
-                            </div>
-                            <div class="Burger__3-Description">
-                                <ul>
-                                    <li>Pan de Papa</li>
-                                    <li>Medallon 80grs</li>
-                                    <li>Cheddar</li>
-                                    <li>Cebolla Caramelizada </li>
-                                </ul>                      
-                            </div>
-                        </div>    
-                        <div class="Burgers__2">    
-                            <div class="Burger__4">Fried Onion</div>
-                            <div class="Burger__5">Big Fat</div>
-                            <div class="Burger__6">Clasic Burger</div>    
-                        </div>
-                        <div class="Descripciones__2">
-                            <div class="Burger__4-Description">
-                                <ul>
-                                    <li>Pan de Papa</li>
-                                    <li>Medallon 80grs</li>
-                                    <li>Cheddar</li>
-                                    <li>Cebolla</li>
-                                    <li>Salsa Especial</li>
-                                </ul>
-                            </div>
-                            <div class="Burger__5-Description">
-                                <ul>
-                                    <li>Pan de Papa</li>
-                                    <li>Medallon 80grs</li>
-                                    <li>Cheddar</li>
-                                    <li>Lechuga</li>
-                                    <li>Salsa BigMc</li>
-                                </ul>    
-                            </div>
-                            <div class="Burger__6-Description">
-                                <ul>
-                                    <li>Pan de Papa</li>
-                                    <li>Medallon 80grs</li>
-                                    <li>Cheddar</li>
-                                    <li>Lechuga</li>
-                                    <li>Tomate</li>
-                                    <li>Cebolla Morada</li>
-                                    <li>Salsa de la casa</li>
-                                </ul>                         
-                            </div>
+                        <div class="Burgers">
+                            <ul id="autoWidth" class="cs-hidden">
+                                <li>
+                                    <div class="Burger__1">
+                                        <img src="C:\Users\USUARIO\Desktop\Programacion\FatBurger\assets\img\BurgerFT2.png">
+                                        <p class="NombreB">Cheese Burger</p>
+                                        <div class="BurgerDescription">
+                                            <ul>
+                                                <li>Pan de Papa</li>
+                                                <li>Medallon 80grs</li>
+                                                <li>Cheddar </li>
+                                            </ul>     
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="Burger__1">
+                                        <img src="C:\Users\USUARIO\Desktop\Programacion\FatBurger\assets\img\BurgerFT2.png">
+                                        <p class="NombreB">Cheese Burger Bacon</p>
+                                        <div class="BurgerDescription">
+                                            <ul>
+                                                <li>Pan de Papa</li>
+                                                <li>Medallon 80grs</li>
+                                                <li>Cheddar</li>
+                                                <li>Panceta Ahumada</li>
+                                            </ul>     
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="Burger__1">
+                                        <img src="C:\Users\USUARIO\Desktop\Programacion\FatBurger\assets\img\BurgerFT2.png">
+                                        <p class="NombreB">Cheese Burger Onion</p>
+                                        <div class="BurgerDescription">
+                                            <ul>
+                                                <li>Pan de Papa</li>
+                                                <li>Medallon 80grs</li>
+                                                <li>Cheddar</li>
+                                                <li>Cebolla Caramelizada </li>
+                                            </ul>     
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="Burger__1">
+                                        <img src="C:\Users\USUARIO\Desktop\Programacion\FatBurger\assets\img\BurgerFT2.png">
+                                        <p class="NombreB">Fried Onion</p>
+                                        <div class="BurgerDescription">
+                                            <ul>
+                                                <li>Pan de Papa</li>
+                                                <li>Medallon 80grs</li>
+                                                <li>Cheddar</li>
+                                                <li>Cebolla</li>
+                                                <li>Salsa Especial</li>
+                                            </ul>     
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="Burger__1">
+                                        <img src="C:\Users\USUARIO\Desktop\Programacion\FatBurger\assets\img\BurgerFT2.png">
+                                        <p class="NombreB">Big Fat</p>
+                                        <div class="BurgerDescription">
+                                            <ul>
+                                                <li>Pan de Papa</li>
+                                                <li>Medallon 80grs</li>
+                                                <li>Cheddar</li>
+                                                <li>Lechuga</li>
+                                                <li>Salsa BigMc</li>
+                                            </ul>     
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="Burger__1">
+                                        <img src="C:\Users\USUARIO\Desktop\Programacion\FatBurger\assets\img\BurgerFT2.png">
+                                        <p class="NombreB">Clasic Burger</p>
+                                        <div class="BurgerDescription">
+                                            <ul>
+                                                <li>Pan de Papa</li>
+                                                <li>Medallon 80grs</li>
+                                                <li>Cheddar</li>
+                                                <li>Lechuga</li>
+                                                <li>Tomate</li>
+                                                <li>Cebolla Morada</li>
+                                                <li>Salsa de la casa</li>
+                                            </ul>     
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     <div class="InfoAdicional">Todas nuestras Burgers vienen dobles, pero se pueden pedir con la cantidad de medallones que deseen.</div>    
                 </section> 
