@@ -346,6 +346,10 @@ header {
 	display: flex;
 } 
 
+.Flex-Nav {
+	display: none;	
+}	
+	
 .Flex-Nav-Responsive {
 	background-color: #CD5720;
 	display: block;
