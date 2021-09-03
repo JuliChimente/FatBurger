@@ -332,20 +332,23 @@
 .Footer {
 	display: none;
 }	
-	
 
+.InfoAdicional {
+	display: none;	
+}
+	
 header {
 	display: flex;
 } 
 
-.Flex-Nav {
+.Flex-Nav-Responsive {
 	background-color: #CD5720;
 	display: block;
 	width: 100vw;
 	height: 160px;
 }
 
-.Logo {
+.Logo-Responsive {
 	width: 120px;
 	height: 120px;
 	margin: auto;
@@ -354,7 +357,7 @@ header {
 }
 
 
-.Flex-Nav__ul {
+.Flex-Nav__ul-Responsive {
 	display: flex;
 	list-style: none;
 	text-align: center;
@@ -363,7 +366,7 @@ header {
 }
 
 
-.Flex-Nav__li a {
+.Flex-Nav__li-Responsive a {
 	text-decoration: none;
 	font-size: 15px;
 	color: #fff;
@@ -539,7 +542,7 @@ header {
 	margin: 10px 0px;
 }
 
-.InfoAdicional {
+.InfoAdicional-Responsive {
 	justify-content: center;
 	padding-bottom: 20px;
 	padding-top: 20px;
