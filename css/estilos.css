@@ -328,7 +328,7 @@
 	display: none;
 }
 
-@media only screen and (max-width: 1340px) {
+@media only screen and (max-width: 1430px) {
 
 * {
 	font-family: 'Georama', sans-serif;
@@ -342,10 +342,6 @@
 .Footer {
 	display: none;
 }	
-
-.InfoAdicional {
-	display: none;	
-}
 	
 header {
 	display: flex;
