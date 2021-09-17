@@ -356,7 +356,7 @@ header {
 	background-color: #CD5720;
 	display: block;
 	width: 100vw;
-	height: 190px;
+	height: 150px;
 	margin-bottom: 20px;
 }
 
@@ -364,8 +364,10 @@ header {
 	width: 135px;
 	height: 120px;
 	margin: auto;
-	padding: 5px;
+	padding: 10px;
 	min-width: 135px;
+	display: flex;
+    	justify-content: center;
 }
 
 
@@ -373,8 +375,8 @@ header {
 	display: flex;
 	list-style: none;
 	text-align: center;
-	margin: 10px;
-	justify-content: space-evenly;
+	margin: 7px;
+	justify-content: center;
 }
 
 
@@ -383,8 +385,13 @@ header {
 	font-size: 20px;
 	color: #fff;
 	text-shadow: 2px 2px 5px black;
+	margin: 80px;
 }
 
+.HaceTuPedido a {
+	margin: 95px;
+}	
+	
 .Flex-Nav__li img {
 	display: none;
 }
